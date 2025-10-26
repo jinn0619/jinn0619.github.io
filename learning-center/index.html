@@ -1,143 +1,171 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>锦年的学习博客</title>
-  
-<link rel="stylesheet" href="/css/hacker-style.css">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>学习中心 | 锦年的学习博客</title><meta name="author" content="锦年"><meta name="copyright" content="锦年"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🎯 专业技术学习路径选择你的学习方向：🤖 自动化运维容器化 · DevOps · CI&#x2F;CD · 监控告警 🔒 网络安全渗透测试 · 安全防御 · 漏洞分析 · 安全运维 ☁️ 云计算云原生 · 微服务 · Serverless · 多云管理 🧠 人工智能机器学习 · 深度学习 · MLOps · 算法工程 🌐 网络工程网络架构 · SDN · 网络自动化 · 协议分析">
+<meta property="og:type" content="website">
+<meta property="og:title" content="学习中心">
+<meta property="og:url" content="https://jinn0619.github.io/learning-center/index.html">
+<meta property="og:site_name" content="锦年的学习博客">
+<meta property="og:description" content="🎯 专业技术学习路径选择你的学习方向：🤖 自动化运维容器化 · DevOps · CI&#x2F;CD · 监控告警 🔒 网络安全渗透测试 · 安全防御 · 漏洞分析 · 安全运维 ☁️ 云计算云原生 · 微服务 · Serverless · 多云管理 🧠 人工智能机器学习 · 深度学习 · MLOps · 算法工程 🌐 网络工程网络架构 · SDN · 网络自动化 · 协议分析">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jinn0619.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-10-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-10-26T16:44:50.817Z">
+<meta property="article:author" content="锦年">
+<meta property="article:tag" content="运维,网络安全,云计算,人工智能,网络工程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jinn0619.github.io/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jinn0619.github.io/learning-center/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
   
-<link rel="stylesheet" href="/css/matrix.css">
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
-<meta name="generator" content="Hexo 8.1.0"></head>
-<body class="hacker-theme">
-  <div class="matrix-bg"></div>
-  
-  <header class="cyber-header">
-    <div class="container">
-      <nav class="cyber-nav">
-        <div class="nav-brand">
-          <span class="glitch" data-text="锦年的学习博客">锦年的学习博客</span>
-        </div>
-        <ul class="nav-menu">
-          
-            <li><a href="/" class="cyber-link">首页</a></li>
-          
-            <li><a href="/learning-center/" class="cyber-link">学习中心</a></li>
-          
-            <li><a href="/categories/" class="cyber-link">技术方向</a></li>
-          
-            <li><a href="/archives/" class="cyber-link">归档</a></li>
-          
-            <li><a href="/about/" class="cyber-link">关于</a></li>
-          
-        </ul>
-      </nav>
-    </div>
-  </header>
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-  <main class="cyber-main">
-    <div class="container">
-      <div class="cyber-hero">
-  <div class="hero-terminal">
-    <div class="terminal-header">
-      <div class="terminal-buttons">
-        <span class="terminal-btn close"></span>
-        <span class="terminal-btn minimize"></span>
-        <span class="terminal-btn maximize"></span>
-      </div>
-      <span class="terminal-title">root@锦年的学习博客:~</span>
-    </div>
-    <div class="terminal-body">
-      <p><span class="prompt">$</span> whoami</p>
-      <p class="typewriter">专注自动化运维 | 网络安全 | 云计算 | AI | 网络工程</p>
-      <p><span class="prompt">$</span> ls -la /skills/</p>
-      <div class="skills-grid">
-        <span class="skill-tag">自动化运维</span>
-        <span class="skill-tag">网络安全</span>
-        <span class="skill-tag">云计算</span>
-        <span class="skill-tag">人工智能</span>
-        <span class="skill-tag">网络工程</span>
-      </div>
-      <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-    </div>
-  </div>
-</div>
-
-<section class="recent-posts">
-  <h2 class="section-title">最近文章</h2>
-  
+      const theme = saveToLocal.get('theme')
     
-      <article class="post cyber-card">
-        <h3 class="post-title">
-          <a href="/2025/10/26/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">测试文章</a>
-        </h3>
-        <div class="post-meta">
-          <span class="post-date">2025-10-26</span>
-          
-        </div>
-        <div class="post-excerpt">
-          
-        </div>
-      </article>
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
     
-      <article class="post cyber-card">
-        <h3 class="post-title">
-          <a href="/2025/10/26/2022/06/04/hello-world/index/"></a>
-        </h3>
-        <div class="post-meta">
-          <span class="post-date">2025-10-26</span>
-          
-        </div>
-        <div class="post-excerpt">
-          
-        </div>
-      </article>
-    
-      <article class="post cyber-card">
-        <h3 class="post-title">
-          <a href="/2025/10/26/hello-world/">Hello World</a>
-        </h3>
-        <div class="post-meta">
-          <span class="post-date">2025-10-26</span>
-          
-        </div>
-        <div class="post-excerpt">
-          
-        </div>
-      </article>
-    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
   
-</section>
-
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '学习中心',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 8.1.0"></head><body><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">锦年的学习博客</span></a></span><div id="menus"></div></nav><div id="page-site-info"><h1 id="site-title">学习中心</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="🎯-专业技术学习路径"><a href="#🎯-专业技术学习路径" class="headerlink" title="🎯 专业技术学习路径"></a>🎯 专业技术学习路径</h1><h2 id="选择你的学习方向："><a href="#选择你的学习方向：" class="headerlink" title="选择你的学习方向："></a>选择你的学习方向：</h2><h3 id="🤖-自动化运维"><a href="#🤖-自动化运维" class="headerlink" title="🤖 自动化运维"></a>🤖 <a href="/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/">自动化运维</a></h3><p>容器化 · DevOps · CI&#x2F;CD · 监控告警</p>
+<h3 id="🔒-网络安全"><a href="#🔒-网络安全" class="headerlink" title="🔒 网络安全"></a>🔒 <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></h3><p>渗透测试 · 安全防御 · 漏洞分析 · 安全运维</p>
+<h3 id="☁️-云计算"><a href="#☁️-云计算" class="headerlink" title="☁️ 云计算"></a>☁️ <a href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a></h3><p>云原生 · 微服务 · Serverless · 多云管理</p>
+<h3 id="🧠-人工智能"><a href="#🧠-人工智能" class="headerlink" title="🧠 人工智能"></a>🧠 <a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></h3><p>机器学习 · 深度学习 · MLOps · 算法工程</p>
+<h3 id="🌐-网络工程"><a href="#🌐-网络工程" class="headerlink" title="🌐 网络工程"></a>🌐 <a href="/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/">网络工程</a></h3><p>网络架构 · SDN · 网络自动化 · 协议分析</p>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">锦年</div><div class="author-info-description">技术学习笔记与实战经验分享</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/26/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">测试文章</a><time datetime="2025-10-26T15:21:00.000Z" title="发表于 2025-10-26 23:21:00">2025-10-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/26/2022/06/04/hello-world/index/" title="无标题">无标题</a><time datetime="2025-10-26T15:20:59.278Z" title="发表于 2025-10-26 23:20:59">2025-10-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/26/hello-world/" title="Hello World">Hello World</a><time datetime="2025-10-26T15:14:17.420Z" title="发表于 2025-10-26 23:14:17">2025-10-26</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
     </div>
-  </main>
-
-  <footer class="cyber-footer">
-    <div class="container">
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <div class="terminal-buttons">
-            <span class="terminal-btn close"></span>
-            <span class="terminal-btn minimize"></span>
-            <span class="terminal-btn maximize"></span>
-          </div>
-          <span class="terminal-title">root@hacker:~</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="prompt">$</span> echo "Stay curious, keep hacking!"</p>
-          <p>Last login: <span class="terminal-date">2025-10-27 01:34:45</span></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   
-<script src="/js/matrix.js"></script>
-
-  
-<script src="/js/cyber-effects.js"></script>
-
-</body>
-</html>
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-10-26T17:38:36.865Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 锦年</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
